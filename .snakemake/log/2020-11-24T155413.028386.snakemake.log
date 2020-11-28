@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 1 of /home/hqyone/github/snakemake/Snakefile:
+Missing input files for rule bwa_map:
+data/genome.fadata/samples/A.fastq

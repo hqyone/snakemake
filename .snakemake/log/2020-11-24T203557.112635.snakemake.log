@@ -1,0 +1,21 @@
+Building DAG of jobs...
+Job counts:
+	count	jobs
+	2	samtools_index
+	2	samtools_sort
+	4
+
+[Tue Nov 24 20:35:57 2020]
+rule samtools_sort:
+    input: mapped_reads/A.bam
+    output: sorted_reads/A.bam
+    jobid: 1
+    wildcards: sample=A
+
+RuleException in line 10 of /home/hqyone/github/snakemake/Snakefile:
+NameError: The name 'ouput' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}
+  File "/home/hqyone/anaconda3/envs/snakemake-tutorial/lib/python3.7/site-packages/snakemake/executors/__init__.py", line 135, in run_jobs
+  File "/home/hqyone/anaconda3/envs/snakemake-tutorial/lib/python3.7/site-packages/snakemake/executors/__init__.py", line 140, in run
+  File "/home/hqyone/anaconda3/envs/snakemake-tutorial/lib/python3.7/site-packages/snakemake/executors/__init__.py", line 151, in _run
+  File "/home/hqyone/anaconda3/envs/snakemake-tutorial/lib/python3.7/site-packages/snakemake/executors/__init__.py", line 171, in printjob
+  File "/home/hqyone/anaconda3/envs/snakemake-tutorial/lib/python3.7/site-packages/snakemake/executors/__init__.py", line 157, in printjob

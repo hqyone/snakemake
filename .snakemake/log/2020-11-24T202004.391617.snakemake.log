@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 10 of /home/hqyone/github/snakemake/Snakefile:
+Missing input files for rule samtools_index:
+sorted_reads/A.bam

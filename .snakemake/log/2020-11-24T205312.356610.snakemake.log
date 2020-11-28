@@ -1,0 +1,3 @@
+NameError in line 27 of /home/hqyone/github/snakemake/Snakefile:
+name 'SAMPLES' is not defined
+  File "/home/hqyone/github/snakemake/Snakefile", line 27, in <module>
